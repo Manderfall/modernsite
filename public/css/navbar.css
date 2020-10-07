@@ -1,0 +1,10 @@
+nav#Navbar {
+	background:none !important;
+	
+}
+
+div#navbarNav{
+	display:flex;
+	justify-content:flex-end;
+	
+}
