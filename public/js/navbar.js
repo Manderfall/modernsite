@@ -52,3 +52,13 @@ function closeSubmenu(e) {
  
 /* Event listener */
 document.addEventListener("click", closeSubmenu, false);
+
+
+window.addEventListener("scroll", function() {
+    if (window.scrollY > 500) {
+        $('.navbar').fadeOut();
+    }
+    else {
+        $('.navbar').fadeIn();
+    }
+},false);

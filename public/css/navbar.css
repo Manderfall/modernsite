@@ -12,10 +12,12 @@ body {
     font-family: sans-serif;
     font-size: 16px;
 }
-nav {
-    background-image: url("/images/navbarbackground.jpg");
-    padding: 0 15px;
-	min-height:600px;
+nav.navbar {
+    background-image:none;    
+	z-index:1;
+	position:fixed;
+	width:100%;
+	
 	
 }
 a {
@@ -25,8 +27,12 @@ a {
 li{
 	list-style:none;
 }
+li.item{
+	float:right !important;
+}
 ul.menu{
 	align-items:center;
+	width:100%;
 }
 li.toggle{
 	color:black !important;
@@ -65,6 +71,7 @@ i{
 }
 
 /* Mobile menu */
+@media all and (min-width: 400px){
 .menu {
     display: flex;
     flex-wrap: wrap;
@@ -126,7 +133,7 @@ i{
     background-color: none;
     border-radius: 3px;
 }
-
+}
 /* Tablet menu */
 @media all and (min-width: 700px) {
     .menu {

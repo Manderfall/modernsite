@@ -2,23 +2,63 @@ body,html{
 background: #232526;  /* fallback for old browsers */
 background: -webkit-linear-gradient(to bottom, #414345, #232526);  /* Chrome 10-25, Safari 5.1-6 */
 background: linear-gradient(to bottom, #414345, #232526); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
+margin:0;
+width:100%;
+}
+.container-fluid{
+	max-width:100%;
+	margin:0 !important;
+}
+div.header img {
+	z-index:0;
+	height:750px;
+	width:100%;
+}
+div.col-12{
+	display:flex;
+	flex-direction:column;
+	justify-content:center;
+	align-items:center;
+	margin:0;
+	width:100%;
+	padding:0;
+}
+div.link-line{
+	display:flex;
+	flex-direction:row;
+	flex-wrap:wrap;
+	justify-content:space-between;
+	padding-left:10px;
+	padding-right:10px;
+	height:75px;
+	background-color:#2E213E;
+	margin-bottom:15px
+}
+div.testimonial{
+	display:flex;
+	justify-content:center;
 }
 img{
-	margin-top:10px;
+	max-height:650px;
 	margin-bottom:10px;
 }
 p{
 	text-align:center;
 	color:#FFF;
+	max-width:450px;
 }
 
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 600px) {
 	div.container{
   	width: 100%;
   	display: flex;
   	justify-content:center;
-  	flex-wrap: wrap;
-	
+  	flex-wrap: wrap;	
+	}
+	div.col-12.link-line a{
+	display:flex;
+	flex-direction:column;
+	font-size:14px;
+	max-width:100%:
 	}
 }
