@@ -55,10 +55,24 @@ document.addEventListener("click", closeSubmenu, false);
 
 
 window.addEventListener("scroll", function() {
-    if (window.scrollY > 500) {
+    if (window.scrollY > 1100) {
         $('.navbar').fadeOut();
     }
     else {
         $('.navbar').fadeIn();
+    }
+},false);
+
+
+/* Event listener */
+document.addEventListener("click", closeSubmenu, false);
+
+
+window.addEventListener("scroll", function() {
+    if (window.scrollY > 2100) {
+        $('.nav2').addClass( "fixed");
+    }
+    else {
+        $('.nav2').removeClass("fixed");
     }
 },false);

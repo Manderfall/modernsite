@@ -69,6 +69,18 @@ i{
 	margin-right:15px;
 	align-items:center;
 }
+/* Navbar 2 fixed test */
+
+.nav2.fixed{
+	position:fixed;
+	top:0;
+	width:100%;
+	z-index:1;
+}
+
+
+
+
 
 /* Mobile menu */
 @media all and (min-width: 400px){
