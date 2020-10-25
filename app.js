@@ -33,11 +33,11 @@ mongoose.connect('mongodb://localhost:27017/modernsite', {
 
 // Routes ------------------------------------------
 const indexRoutes = require("./routes/index");
-
+const packagesRoutes = require("./routes/packages");
 
 
 app.use(indexRoutes);
-
+app.use(packagesRoutes);
 
 // Globals ------------------------------------------------------
 const port = 3000;
