@@ -4,6 +4,8 @@ const bodyParser = require("body-parser");
 const mongoose = require ("mongoose");
 const methodOverride = require ("method-override");
 
+/* Models */
+const Vacation = require ("./models/vacation")
 
 // Express and Modules ------------------------------------------
 const app = express();

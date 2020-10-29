@@ -5,38 +5,108 @@ body,html{
 }
 
 
-
-div.card-holder{
-	display:flex;
-	flex-direction:row;
-	margin:0 !important;
-	width:100%;
-	height:100%;
+ul li{
+	list-style:none;	
 }
+/* ------------------ */
 
-div.row{
+/* keeps navbar above page */
+div.container-fluid.vacation-container{
+	margin-top:9vh;
+}
+/* ------------------ */
+
+/* makes image all same size when shrinking screen */
+img.vacation-image{	
+    height:250px;
+    width:100%;
+}
+/* ------------------ */
+
+/* item card styles */
+div.col-sm-6.col-md-4.col-lg-3{
 	display:flex;
-	justify-content:space-between;
+	justify-content:center;
 	align-items:center;
-	margin:0 auto;
+	flex-direction:column;
+	max-height:auto;
+	max-width:auto;
+	margin:2vh 2vw;
+    border:1px solid black;
+	padding:0;
+	background-color:#7c52f2;
+	-webkit-box-shadow: 10px 10px 5px -5px rgba(41,41,41,0.67);
+	-moz-box-shadow: 10px 10px 5px -5px rgba(41,41,41,0.67);
+	box-shadow: 10px 10px 5px -5px rgba(41,41,41,0.67);
 }
+/* ------------------ */
 
-
-
-/* Card Layout */
-div.card{
+/* text styles */
+.text{   
+	margin-top:1vh;
+    margin-bottom:1vh;
+    left: 0;
+    right: 0;
+    top: -10%; /* Adjust this value to move the positioned div up and down */     
+	color:#fff;	
+	text-shadow: 1px 2px #000;
+	font-family:"Roboto"; sans-serif;
+	font-size: 20px;
+	font-weight:400;
+	letter-spacing:1px;
+	
+    }
+.vacation-price.text{
+	font-size:24px;
+	text-shadow:2px 2px black;
+}
+.vacation-header.text{
+	text-align:center;
 	display:flex;
-	justify-content:space-between;
+	flex-direction:column;
+	justify-content:center;
 	align-items:center;
-	width:300px;
-	height:400px;
-	-webkit-box-shadow: 3px 10px 5px 0px rgba(0,0,0,0.75);
-	-moz-box-shadow: 3px 10px 5px 0px rgba(0,0,0,0.75);
-	box-shadow: 3px 10px 5px 0px rgba(0,0,0,0.75);
+	text-align:center;
+	font-family:"Nunito"; sans-serif;
+	font-wight:700;
+	font-size:26px;
+	text-shadow: 2px 2px #000;
+	margin:auto;
+	margin-bottom:5px;
+}
+
+div.vacation-desc.text{
+	margin:auto;
+	font-size:20px;
+	text-shadow: 2px 1px #000;
+	text-align:center;
+	margin:5px;
 
 }
-img {
-    width: 300px; /* You can set the dimensions to whatever you want */
-    height: 200px;
-    object-fit: cover;
+/* ------------------ */
+
+/* cart icon hover effect */
+div.col-sm-6.col-md-4.col-lg-3 i{
+	color:#56CCF2;
+	text-shadow:2px 2px black;
+	outline:none;
+	border:none;	
+	
+
 }
+div.col-sm-6.col-md-4.col-lg-3 i:hover{
+	
+	top:1px;
+	outline:none;
+	text-decoration:none;
+	color:#3BEF15;
+	text-shadow:1px 1px #000;
+	position:relative;
+}
+div.col-sm-6.col-md-4.col-lg-3 i:active{
+	box-shadow:none;
+	top:2px;
+	outline:none;
+	text-shadow:0px 0px #000;
+}
+/* ------------------ */
