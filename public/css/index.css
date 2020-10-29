@@ -7,6 +7,7 @@ width:100%;
 .container-fluid{
 	max-width:100%;
 	margin:0 !important;
+	padding:0 !important;
 }
 div.header img {
 	z-index:0;
@@ -37,10 +38,13 @@ div.testimonial{
 	display:flex;
 	justify-content:center;
 }
-img{
-	max-height:650px;
-	margin-bottom:40px;
-	
+img.dest{
+	height:300px;
+	margin-top:25px;
+	margin-bottom:40px;	
+}
+img.test{
+	height: 500px;
 }
 p{
 	text-align:center;

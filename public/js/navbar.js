@@ -69,7 +69,7 @@ document.addEventListener("click", closeSubmenu, false);
 
 
 window.addEventListener("scroll", function() {
-    if (window.scrollY > 2130) {
+    if (window.scrollY > 1860) {
         $('.nav2').addClass( "fixed");
     }
     else {
