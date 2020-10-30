@@ -53,11 +53,13 @@ app.use((req, res, next) => {
 // Routes ------------------------------------------
 const indexRoutes = require("./routes/index");
 const packagesRoutes = require("./routes/packages");
-
+const loginRoutes = require("./routes/login");
+const newRoutes = require("./routes/newuser");
 
 app.use(indexRoutes);
 app.use(packagesRoutes);
-
+app.use(loginRoutes);
+app.use(newRoutes);
 // Globals ------------------------------------------------------
 const port = 3000;
 

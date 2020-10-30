@@ -1,0 +1,40 @@
+<%- include ("partials/header") %>
+<%- include ("partials/navbar") %>
+	
+	<div class="container-fluid login">
+		
+		<div class="row">
+			<div class="col col-sm-12">
+				<form method="POST" action="/login">
+					<h3 class="move">Sign In</h3>
+					<div class="input-group">
+						<div class="input-group-prepend">
+							<span class="input-group-text">Username</span>
+						</div>
+						<input type="text" name="username" class="form-control" >
+					</div>
+
+					<div class="input-group">
+						<div class="input-group-prepend">
+							<span class="input-group-text pass" >Password</span>
+						</div>
+						<input type="password" name="password" class="form-control">
+					</div>
+					<button class="btn btn-primary">
+						Sign In
+					</button>
+				</form>
+			<div class="col col-sm-12">
+				<h5 class="member">
+					Not a member?
+				</h5>
+				<button class="btn btn-success btn-md">
+					<a href="/new" >Sign Up</a>
+				</button>
+			</div>
+			</div>
+
+		</div>
+
+	</div>
+<%- include("partials/footer") %>

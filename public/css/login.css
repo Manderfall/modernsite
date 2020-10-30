@@ -1,0 +1,51 @@
+/* log form */
+div.container-fluid.login{
+    display: block;
+    text-align:center;
+	
+}
+form{	
+	margin-top:169px;
+	margin-bottom:60px;
+	display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+}
+span.input-group-text{
+	display:flex;
+	justify-content:center;
+	align-content:center
+}
+span.pass{
+	padding-right:17px;
+
+}
+
+input.form-control{
+	max-width:350px;
+}
+h5.member{
+	margin-top:20px;
+	margin-bottom:20px;
+}
+h3.move{
+	
+	margin-bottom:15px;
+}
+div.input-group{
+	margin-bottom:15px;
+}
+/* ------------------ */
+div.logout{
+	margin-top:20vh;;
+}
+
+
+div.construction{
+	margin-top:20vh;
+	color:white;
+	display:flex;
+	justify-content:center;
+	align-self:center;
+}
