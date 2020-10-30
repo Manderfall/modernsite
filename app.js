@@ -3,8 +3,12 @@ const express = require ("express");
 const bodyParser = require("body-parser");
 const mongoose = require ("mongoose");
 const methodOverride = require ("method-override");
+const passport = require ("passport");
+const localStrategy = require ("passport-local");
+const passportLocalMongoose = require ("passport-local-mongoose");
 
 /* Models */
+const User = require ("./models/user")
 const Vacation = require ("./models/vacation")
 
 // Express and Modules ------------------------------------------
@@ -32,6 +36,19 @@ mongoose.connect('mongodb://localhost:27017/modernsite', {
 .then(() => console.log('Connected to DB!'))
 .catch(error => console.log(error.message));
 
+// Passport ----------------------------------------------------
+app.use(passport.initialize());
+app.use(passport.session());
+
+passport.use(new localStrategy(User.authenticate())); 
+passport.serializeUser(User.serializeUser());  
+passport.deserializeUser(User.deserializeUser()); 
+
+// Locals -------------------------------------------------------
+app.use((req, res, next) => {
+	res.locals.currentUser = req.user; // Includes the User in all routes.
+	next(); // Required to move forward from this middleware.
+});
 
 // Routes ------------------------------------------
 const indexRoutes = require("./routes/index");
