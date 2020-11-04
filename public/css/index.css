@@ -34,6 +34,11 @@ div.link-line{
 	background:#364AA7;
 	margin-bottom:15px;
 	width:100%;
+	
+}
+.row{
+	margin-right:0 !important;
+	margin-left:0 !important;
 }
 div.testimonial{
 	display:flex;
@@ -74,7 +79,5 @@ p{
 	div.row.right{
 	flex-direction: column-reverse !important;
 	}
-	.nav2{
-		
-	}
+
 }
