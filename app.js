@@ -56,11 +56,15 @@ const indexRoutes = require("./routes/index");
 const packagesRoutes = require("./routes/packages");
 const loginRoutes = require("./routes/login");
 const newRoutes = require("./routes/newuser");
+const aboutRoutes = require("./routes/about");
+
 
 app.use(indexRoutes);
 app.use(packagesRoutes);
 app.use(loginRoutes);
 app.use(newRoutes);
+app.use(aboutRoutes);
+
 // Globals ------------------------------------------------------
 const port = 3000;
 
